@@ -149,7 +149,7 @@ function play(){
                 }, 100);
         })
 
-        window.addEventListener('click',()=>{
+        body.addEventListener('click',()=>{
             counter++
             btn.remove()
             switch (counter) {
@@ -178,7 +178,7 @@ function play(){
             sound.src = sounds[random].src
             setTimeout(function () {      
                 sound.play();
-                }, 1)
+                }, 100)
         })
 }
 //--------------------------------Start--------------------------------
