@@ -149,7 +149,7 @@ function play(){
                 }, 100);
         })
 
-        body.addEventListener('click',()=>{
+        window.addEventListener('click',()=>{
             counter++
             btn.remove()
             switch (counter) {
