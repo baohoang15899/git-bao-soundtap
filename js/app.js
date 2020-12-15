@@ -178,7 +178,7 @@ function play(){
             sound.src = sounds[random].src
             setTimeout(function () {      
                 sound.play();
-                }, 100)
+                }, 20)
         })
 }
 //--------------------------------Start--------------------------------
