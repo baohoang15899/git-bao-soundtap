@@ -7,7 +7,7 @@ let fillRight = document.querySelector('.fillRight')
 let animate = document.querySelectorAll('.animation')
 let circle = document.querySelectorAll('.circle')
 let grid = document.querySelectorAll('.grid')
-let body = document.querySelector("body")
+let body = document.querySelector(".project")
 let counter = 0
 //--------------------------------Setup Object--------------------------------
 let sounds = [
