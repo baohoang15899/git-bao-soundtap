@@ -1,18 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-html,
-body {
-  cursor: pointer;
-  touch-action: manipulation;
-  height: 100%; }
-
 .project {
   overflow: hidden;
   background-color: #b8c6db;
@@ -184,4 +169,4 @@ body {
   .project .matte.add {
     right: 20px; } }
 
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=style.css.map */
