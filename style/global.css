@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  touch-action: manipulation;
+  height: 100%; }
+
+.project {
+  overflow: hidden;
+  background-color: #b8c6db;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  position: relative; }
+  .project .gridWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+    .project .gridWrapper .grid {
+      background-color: green;
+      margin: 15px;
+      width: 20px;
+      height: 20px;
+      opacity: 0; }
+  .project .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 0px;
+    height: 100px;
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
+    visibility: hidden; }
+    .project .line.add {
+      opacity: 1;
+      visibility: visible;
+      width: 600px; }
+  .project .chotto {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 300px;
+    transform: translateY(-200px);
+    height: 300px;
+    background-color: pink;
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+    opacity: 0;
+    transition-delay: 0.3s;
+    visibility: hidden; }
+    .project .chotto.add {
+      transform: translateY(0);
+      opacity: 1;
+      left: 60px;
+      visibility: visible; }
+  .project .matte {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    background-color: #d4ffc0;
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(300px);
+    opacity: 0;
+    visibility: hidden; }
+    .project .matte.add {
+      transform: translateY(0);
+      opacity: 1;
+      right: 30px;
+      visibility: visible; }
+  .project footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #313131;
+    width: 100vw;
+    left: 50%;
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    color: White;
+    font-size: 18px; }
+    .project footer p {
+      text-align: center;
+      padding: 8px; }
+  .project .fillLeft {
+    width: 0%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: pink;
+    opacity: 0;
+    transition: all ease-in-out 0.6s;
+    opacity: 0;
+    visibility: hidden; }
+    .project .fillLeft.add {
+      visibility: visible;
+      width: 100%;
+      opacity: 1; }
+  .project .fillRight {
+    width: 0%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #dadada;
+    transition: all ease-in-out 0.6s;
+    opacity: 0;
+    visibility: hidden; }
+    .project .fillRight.add {
+      visibility: visible;
+      width: 100%;
+      opacity: 1; }
+  .project__title {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    opacity: 1;
+    z-index: 8000;
+    transition: all ease-in-out 0.4s; }
+    .project__title.add {
+      visibility: hidden;
+      opacity: 0; }
+  .project__description {
+    z-index: 8000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: all ease-in-out 0.4s; }
+    .project__description.add {
+      visibility: hidden;
+      opacity: 0; }
+    .project__description p {
+      padding: 10px 40px;
+      box-shadow: 0px 0px 3px 2px #dbdbdb;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      border-radius: 8px;
+      background-color: #fff2f4; }
+
+@media screen and (max-width: 992px) {
+  .project__title {
+    font-size: 45px; }
+  .project .line.add {
+    width: 400px; }
+  .project .chotto {
+    width: 200px;
+    height: 200px; }
+  .project .matte {
+    width: 200px;
+    height: 200px; } }
+@media screen and (max-width: 621px) {
+  .project__description {
+    width: 85vw;
+    margin: auto; }
+    .project__description p {
+      font-size: 13px;
+      padding: 10px; } }
+@media screen and (max-width: 401px) {
+  .project .line.add {
+    width: 85vw; }
+  .project .chotto.add {
+    left: 20px; }
+  .project .matte.add {
+    right: 20px; } }
+
+/*# sourceMappingURL=global.css.map */
